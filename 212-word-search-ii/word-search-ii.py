@@ -38,9 +38,4 @@ class Solution:
             if not curr_node.children:
                 parent.children.pop(char)
                 
-        for r in range(m):
-            for c in range(n):
-                if board[r][c] in root.children:
-                    dfs(r, c, root)
-                    
-        return res
+     
