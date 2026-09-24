@@ -20,9 +20,5 @@ class Solution:
         return self.merge(l1, l2)
         
     def merge(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
-        dummy = tail = ListNode(None)
-        while l1 and l2:
-            if l1.val < l2.val:
-                tail.next, l1 = l1, l1.next
-            else:
+      
            
