@@ -14,13 +14,6 @@ class Solution:
                 node = node.children[char]
             node.word = word
             
-        m, n = len(board), len(board[0])
-        res = []
-        
-        def dfs(r, c, parent):
-            char = board[r][c]
-            curr_node = parent.children[char]
-            
-            if curr_node.word:
+     
                
                
