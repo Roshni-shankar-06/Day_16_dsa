@@ -13,12 +13,4 @@ class Solution:
         prev.next = None  # Break the list
         
         # Step 2. Recursively sort each half
-        l1 = self.sortList(head)
-        l2 = self.sortList(slow)
-        
-        # Step 3. Merge sorted l1 and l2
-        return self.merge(l1, l2)
-        
-    def merge(self, l1: Optional[ListNode], l2: Optional[ListNode]) -> Optional[ListNode]:
-      
-           
+     
