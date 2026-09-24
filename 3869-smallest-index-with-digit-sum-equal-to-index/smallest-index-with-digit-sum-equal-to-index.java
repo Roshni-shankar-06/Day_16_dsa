@@ -8,8 +8,4 @@ class Solution {
         return -1;
     }
 
-    private int getDigitSum(int num) {
-        int sum = 0;
-        while (num > 0) {
-            sum += num % 10;
-      
+  
