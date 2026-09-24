@@ -6,7 +6,3 @@ class Solution {
     while (head != null) {       // the current inserting node
       ListNode next = head.next; // Cache the next inserting node.
       if (prev.val >= head.val)
-        prev = dummy; // Move `prev` to the front.
-      while (prev.next != null && prev.next.val < head.val)
-        prev = prev.next;
-      head.next = prev.next;
