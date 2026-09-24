@@ -22,11 +22,5 @@ class Solution:
             curr_node = parent.children[char]
             
             if curr_node.word:
-                res.append(curr_node.word)
-                curr_node.word = None # Avoid duplicate additions
-                
-            board[r][c] = '#' # Mark as visited
-            
-            for dr, dc in [(0, 1), (0, -1), (1, 0), (-1, 0)]:
-                nr, nc = r + dr, c + dc
+               
                
