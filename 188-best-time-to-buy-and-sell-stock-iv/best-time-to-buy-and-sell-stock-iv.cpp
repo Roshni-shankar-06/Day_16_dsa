@@ -14,10 +14,4 @@ public:
         vector<int> hold(k + 1, INT_MIN);
         for (const int price : prices) {
             for (int i = k; i > 0; --i) {
-                sell[i] = max(sell[i], hold[i] + price);
-                hold[i] = max(hold[i], sell[i - 1] - price);
-            }
-        }
-        return sell[k];
-    }
-};
+            
