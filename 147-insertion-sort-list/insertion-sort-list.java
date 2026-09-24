@@ -10,10 +10,3 @@ class Solution {
       while (prev.next != null && prev.next.val < head.val)
         prev = prev.next;
       head.next = prev.next;
-      prev.next = head;
-      head = next; // Update the current inserting node.
-    }
-
-    return dummy.next;
-  }
-}
