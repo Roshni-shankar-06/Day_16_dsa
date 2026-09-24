@@ -8,12 +8,7 @@ class Solution:
         root = TrieNode()
         for word in words:
             node = root
-            for char in word:
-                if char not in node.children:
-                    node.children[char] = TrieNode()
-                node = node.children[char]
-            node.word = word
-            
+          
      
                
                
